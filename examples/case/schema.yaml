@@ -1,0 +1,22 @@
+$schema: "http://json-schema.org/draft-07/schema#"
+
+type: "array"
+items:
+  $ref: "#/definitions/snake_key_object"
+
+definitions:
+  snake_key_object:
+    description: "objectのキーはsnake_caseであること"
+    type: "object"
+    properties: {}
+    patternProperties:
+      ^[a-z][a-z_]*$:
+        anyOf:
+          - $ref: "#/definitions/snake_key_object"
+          - type: "string"
+          - type: "number"
+          - type: "integer"
+          - type: "boolean"
+          - type: "null"
+    additionalProperties: false
+    errorMessage: 'should have only snake_case property keys'

@@ -1,0 +1,8 @@
+name: "Barack Obama"
+address:
+  lines:
+    - "1600 Pennsylvania Avenue Northwest"
+  zip: "DC 20500"
+  # country: "USA"
+  city: "Washington"
+votes: "lots"

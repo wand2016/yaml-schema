@@ -1,0 +1,9 @@
+- foo_bar: "hoge_piyo"
+  bar_baz: 123
+  baz_foo: true
+  foo_baz_foo: null
+- {}
+- topLevel: "boo"
+- foo_bar: "hoge_piyo"
+  nested:
+    barBaz: "hogePiyo"
