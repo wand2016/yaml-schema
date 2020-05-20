@@ -1,3 +1,17 @@
+# installation & usage #
+
+``` sh
+npm i @d.horiyama/yaml_schema
+```
+
+
+```sh
+cat input.yaml | npx yaml_schema -s schema.yaml
+```
+
+# sample #
+
+
 examples/object/schema.yaml
 
 ``` yaml
@@ -41,9 +55,11 @@ votes: "lots"
 
 - validation
 
-``` sh
-cat examples/object/input.yaml | node dist/index.js -s examples/object/schema.yaml
+```sh
+cat node_modules/@d.horiyama/yaml_schema/examples/object/input.yaml \
+| npx yaml_schema -s node_modules/@d.horiyama/yaml_schema/examples/object/schema.yaml
 ```
+
 
 ```
 data/address should have required property 'country'
